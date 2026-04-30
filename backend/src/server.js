@@ -4,10 +4,13 @@ import app from "./app.js";
 
 dotenv.config();
 
+// Connect to MongoDB
 connectDB();
 
+// Port
 const PORT = process.env.PORT || 5000;
 
-app.listen(PORT, () => {
+// IMPORTANT: bind to 0.0.0.0 for Docker
+app.listen(PORT, "0.0.0.0", () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });
