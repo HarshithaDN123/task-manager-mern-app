@@ -75,7 +75,7 @@ export default function Login() {
                 />
               </div>
 
-              <button className="btnbtn-dark w-100" type="submit">
+              <button className="btn btn-dark w-100" type="submit">
                 Login
               </button>
             </form>
